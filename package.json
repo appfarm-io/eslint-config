@@ -1,0 +1,11 @@
+{
+	"name": "@appfarm/eslint-config",
+	"description": "Appfarm ESLint Configuration",
+	"author": "Tim Kurvers <tim@appfarm.io>",
+	"repository": "github:appfarm-io/eslint-config",
+	"license": "MIT",
+	"private": true,
+	"scripts": {},
+	"dependencies": {},
+	"devDependencies": {}
+}
