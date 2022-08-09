@@ -1,5 +1,6 @@
 {
 	"name": "@appfarm/eslint-config",
+	"version": "1.0.0",
 	"description": "Appfarm ESLint Configuration",
 	"author": "Tim Kurvers <tim@appfarm.io>",
 	"repository": "github:appfarm-io/eslint-config",
