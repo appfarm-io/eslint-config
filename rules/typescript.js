@@ -52,10 +52,12 @@ module.exports = {
 			tuples: 'always-multiline',
 		}],
 
-		// Tabs for indentation
+		// Tabs for indentation (with some TypeScript adjustments)
+		// See: https://github.com/typescript-eslint/typescript-eslint/issues/1824
 		'indent': 'off',
 		'@typescript-eslint/indent': ['warn', 'tab', {
 			SwitchCase: 1,
+			ignoredNodes: ['TSTypeParameterInstantiation'],
 		}],
 
 		// Disallow unused expressions (except for short-circuits)
