@@ -71,6 +71,12 @@ module.exports = {
 			args: 'none',
 		}],
 
+		// Require defining identifiers before usage (exception for type definitions)
+		'no-use-before-define': 'off',
+		'@typescript-eslint/no-use-before-define': ['error', {
+			typedefs: false,
+		}],
+
 		// Omit semicolons
 		'semi': 'off',
 		'@typescript-eslint/semi': ['warn', 'never'],
