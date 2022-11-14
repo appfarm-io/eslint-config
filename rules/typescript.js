@@ -99,5 +99,13 @@ module.exports = {
 		// Omit semicolons
 		semi: 'off',
 		'@typescript-eslint/semi': ['warn', 'never'],
+
+		// Use angle brackets for typing
+		'@typescript-eslint/consistent-type-assertions': [
+			'warn',
+			{
+				assertionStyle: 'angle-bracket',
+			},
+		],
 	},
 }
