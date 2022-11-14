@@ -7,21 +7,27 @@ module.exports = {
 		'arrow-parens': 'off',
 
 		// Enforce camelcase (exception for Appfarm conventions)
-		'camelcase': ['warn', {
-			allow: ['^\\$af_', '^af_', '^e_', '^p_', '_id$'],
-		}],
+		camelcase: [
+			'warn',
+			{
+				allow: ['^\\$af_', '^af_', '^e_', '^p_', '_id$'],
+			},
+		],
 
 		// Allow class methods to not use `this`
 		'class-methods-use-this': 'off',
 
 		// Enforce dangling commas (except between function arguments)
-		'comma-dangle': ['warn', {
-			arrays: 'always-multiline',
-			exports: 'always-multiline',
-			functions: 'never',
-			imports: 'always-multiline',
-			objects: 'always-multiline',
-		}],
+		'comma-dangle': [
+			'warn',
+			{
+				arrays: 'always-multiline',
+				exports: 'always-multiline',
+				functions: 'never',
+				imports: 'always-multiline',
+				objects: 'always-multiline',
+			},
+		],
 
 		// Do not require default case in switch statements
 		'default-case': 'off',
@@ -39,11 +45,14 @@ module.exports = {
 		'implicit-arrow-linebreak': 'off',
 
 		// Do not require extensions for JavaScript / TypeScript files
-		'import/extensions': ['error', {
-			js: 'never',
-			json: 'always',
-			ts: 'never',
-		}],
+		'import/extensions': [
+			'error',
+			{
+				js: 'never',
+				json: 'always',
+				ts: 'never',
+			},
+		],
 
 		// Allow dynamic requires (scarcely)
 		'import/no-dynamic-require': 'off',
@@ -55,14 +64,17 @@ module.exports = {
 		'max-classes-per-file': 'off',
 
 		// Maximum line length
-		'max-len': ['warn', 115, {
-			ignoreComments: true,
-			ignoreRegExpLiterals: true,
-			ignoreStrings: true,
-			ignoreTemplateLiterals: true,
-			tabWidth: 2,
-
-		}],
+		'max-len': [
+			'warn',
+			115,
+			{
+				ignoreComments: true,
+				ignoreRegExpLiterals: true,
+				ignoreStrings: true,
+				ignoreTemplateLiterals: true,
+				tabWidth: 2,
+			},
+		],
 
 		// Allow chained calls
 		'newline-per-chained-call': 'off',
@@ -82,9 +94,13 @@ module.exports = {
 		// Tabs for indentation
 		'no-mixed-spaces-and-tabs': ['warn', 'smart-tabs'],
 		'no-tabs': ['off'],
-		'indent': ['warn', 'tab', {
-			SwitchCase: 1,
-		}],
+		indent: [
+			'warn',
+			'tab',
+			{
+				SwitchCase: 1,
+			},
+		],
 
 		// Allow multi-line strings
 		'no-multi-str': 'off',
@@ -102,18 +118,17 @@ module.exports = {
 		'no-plusplus': 'off',
 
 		// Disallow specific export names
-		'no-restricted-exports': ['error', {
-			restrictedNamedExports: [
-				'then', // confusion when dynamically `import()`ed, and breaks most Node ESM versions
-			],
-		}],
+		'no-restricted-exports': [
+			'error',
+			{
+				restrictedNamedExports: [
+					'then', // confusion when dynamically `import()`ed, and breaks most Node ESM versions
+				],
+			},
+		],
 
 		// Disallow various constructs
-		'no-restricted-syntax': ['error',
-			'ForInStatement',
-			'LabeledStatement',
-			'WithStatement',
-		],
+		'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
 
 		// Disallow return assignments unless enclosed in parens
 		'no-return-assign': ['warn', 'except-parens'],
@@ -128,21 +143,30 @@ module.exports = {
 		'no-underscore-dangle': 'off',
 
 		// Disallow unused expressions (except for short-circuits)
-		'no-unused-expressions': ['error', {
-			allowShortCircuit: true,
-		}],
+		'no-unused-expressions': [
+			'error',
+			{
+				allowShortCircuit: true,
+			},
+		],
 
 		// Enforce using variables, allow unused arguments
-		'no-unused-vars': ['warn', {
-			vars: 'all',
-			args: 'none',
-		}],
+		'no-unused-vars': [
+			'warn',
+			{
+				vars: 'all',
+				args: 'none',
+			},
+		],
 
 		// Allow using functions before they are defined (hoisting)
-		'no-use-before-define': ['error', {
-			classes: true,
-			functions: false,
-		}],
+		'no-use-before-define': [
+			'error',
+			{
+				classes: true,
+				functions: false,
+			},
+		],
 
 		// Do not require newlines in object literals
 		'object-curly-newline': 'off',
@@ -166,7 +190,7 @@ module.exports = {
 		'prefer-template': 'off',
 
 		// Omit semicolons
-		'semi': ['warn', 'never'],
+		semi: ['warn', 'never'],
 
 		// Do not enforce spaced comments
 		'spaced-comment': 'off',
